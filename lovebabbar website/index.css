@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    
+    max-width: 66vw;
+    padding: 2rem 2rem;
+    margin: 0 12rem;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1{
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.header p{
+    max-width: 788px;
+    text-align: center;
+    color: purple;
+    margin: 0 auto;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    
+   
+}
+
+.card_container{
+   
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+   
+}
+.img_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.img_src{
+    object-fit: cover;
+    object-position: center;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_tittle_container
+{
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+}
+
+.card_container:hover .img_src{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_tittle_container h3{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+.anchor:hover .dev{
+    color: blue;
+}
+.card_tittle_container p{
+    color: grey;
+    font-size: 1rem;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    
+}
+.author_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.avtaar
+{
+    margin-left: 0.1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgb(138, 136, 136);
+    border-radius: 50%;
+    background-color: rgb(192, 192, 192);
+    overflow: hidden;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.author_name{
+    color: blue;
+}
+.author_date{
+    color: rgb(134, 134, 134);
+}
+
+.author_tech
+{
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+    margin-bottom: 1rem;
+  
+}
